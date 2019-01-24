@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[使用github和hexo搭建个人博客]]></title>
+    <title><![CDATA[这是posts第二个页面]]></title>
     <url>%2F2019%2F01%2F24%2Fposts.1%2F</url>
     <content type="text"></content>
       <categories>
@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[使用github和hexo搭建个人博客]]></title>
     <url>%2F2019%2F01%2F24%2Fposts%2F</url>
-    <content type="text"><![CDATA[所谓博客，都是孤芳自赏 现在越来越多的人喜欢利用Github搭建静态网站，原因不外乎简单省钱。本人也利用hexo+github搭建了本博客，用于分享一些心得。在此过程中，折腾博客的各种配置以及功能占具了我一部分时间，在此详细记录下我是如何利用hexo+github搭建静态博客以及一些配置相关问题，以免过后遗忘，且当备份之用。 准备工作 下载node.js并安装（官网下载安装），默认会安装npm。 下载安装git（官网下载安装） 下载安装hexo。方法：打开cmd 运行npm install -g hexo 本地搭建hexo静态博客 新建一个文件夹，如MyBlog 进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙） 生成完模板，运行npm install（目前貌似不用运行这一步） 最后运行：hexo server （运行程序，访问本地+localhost:4000可以看到博客已经搭建成功） 部署github 在MyBlog下安装npm install –save hexo-deployer-git 找到_config.yml文件修改一下文件 deploy:type: gitrepo: https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.gitbranch: master 最后运行 hexo clean(清除) hexo g(生成) hexo d(部署) 点击查看效果: https://zhanghuaxiao.github.io/]]></content>
+    <content type="text"><![CDATA[所谓博客，都是孤芳自赏 现在越来越多的人喜欢利用Github搭建静态网站，原因不外乎简单省钱。本人也利用hexo+github搭建了本博客，用于分享一些心得。在此过程中，折腾博客的各种配置以及功能占具了我一部分时间，在此详细记录下我是如何利用hexo+github搭建静态博客以及一些配置相关问题，以免过后遗忘，且当备份之用。 准备工作 下载node.js并安装（官网下载安装），默认会安装npm。 下载安装git（官网下载安装） 下载安装hexo。方法：打开cmd 运行npm install -g hexo 本地搭建hexo静态博客 新建一个文件夹，如MyBlog 进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙） 生成完模板，运行npm install（目前貌似不用运行这一步） 最后运行：hexo server （运行程序，访问本地+localhost:4000可以看到博客已经搭建成功） 部署github 在MyBlog下安装 npm install –save hexo-deployer-git 找到_config.yml文件修改一下文件 deploy:type: gitrepo: https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.gitbranch: master 最后运行 hexo clean(清除) hexo g(生成) hexo d(部署) 点击查看效果: https://zhanghuaxiao.github.io/ 使用nexT主题 安装 git clone https://github.com/iissnan/hexo-theme-next themes/next 修改_config.yml文件中 theme:next 运行hexo clean hexo s hexo和nexT中文网 hexo中文网 https://hexo.io/zh-cn/docs/helpersnexT中文官网 http://theme-next.iissnan.com/getting-started.html]]></content>
       <categories>
         <category>分类与(web)</category>
       </categories>

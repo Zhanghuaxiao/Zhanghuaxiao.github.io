@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-24T04:25:01.107Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>这是posts第二个页面</title>
+    <link href="http://yoursite.com/2019/01/24/posts.1/"/>
+    <id>http://yoursite.com/2019/01/24/posts.1/</id>
+    <published>2019-01-23T16:00:00.000Z</published>
+    <updated>2019-01-24T04:25:01.107Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="分类与(node)" scheme="http://yoursite.com/categories/%E5%88%86%E7%B1%BB%E4%B8%8E-node/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用github和hexo搭建个人博客</title>
+    <link href="http://yoursite.com/2019/01/24/posts/"/>
+    <id>http://yoursite.com/2019/01/24/posts/</id>
+    <published>2019-01-23T16:00:00.000Z</published>
+    <updated>2019-01-24T05:07:08.558Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>所谓博客，都是孤芳自赏 </p></blockquote><p>现在越来越多的人喜欢利用Github搭建静态网站，原因不外乎简单省钱。本人也利用hexo+github搭建了本博客，用于分享一些心得。在此过程中，折腾博客的各种配置以及功能占具了我一部分时间，在此详细记录下我是如何利用hexo+github搭建静态博客以及一些配置相关问题，以免过后遗忘，且当备份之用。<br><a id="more"></a></p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>下载node.js并安装（官网下载安装），默认会安装npm。</li><li>下载安装git（官网下载安装）</li><li>下载安装hexo。方法：打开cmd 运行npm install -g hexo</li></ul><h2 id="本地搭建hexo静态博客"><a href="#本地搭建hexo静态博客" class="headerlink" title="本地搭建hexo静态博客"></a>本地搭建hexo静态博客</h2><ul><li>新建一个文件夹，如MyBlog</li><li>进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙）</li><li>生成完模板，运行npm install（目前貌似不用运行这一步）</li><li>最后运行：hexo server （运行程序，访问本地+localhost:4000可以看到博客已经搭建成功）</li></ul><h2 id="部署github"><a href="#部署github" class="headerlink" title="部署github"></a>部署github</h2><ul><li>在MyBlog下安装 <strong>npm install –save hexo-deployer-git</strong></li><li><p>找到_config.yml文件修改一下文件</p><blockquote><p>deploy:<br>type: git<br>repo: <a href="https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.git" target="_blank" rel="noopener">https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.git</a><br>branch: master</p></blockquote><p><img style="width:600px;height:200px" src="/img/urlimg.png" class="full-image"></p></li><li>最后运行 hexo clean(清除) hexo g(生成) hexo d(部署)</li><li>点击查看效果: <a href="https://zhanghuaxiao.github.io/" target="_blank" rel="noopener">https://zhanghuaxiao.github.io/</a><br><img style="width:600px;height:200px" src="/img/github-pages.png" class="full-image"></li></ul><h2 id="使用nexT主题"><a href="#使用nexT主题" class="headerlink" title="使用nexT主题"></a>使用nexT主题</h2><ul><li><blockquote><p>安装 git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next </p></blockquote></li><li>修改_config.yml文件中 <strong>theme:next</strong></li><li>运行hexo clean  hexo s</li></ul><h2 id="hexo和nexT中文网"><a href="#hexo和nexT中文网" class="headerlink" title="hexo和nexT中文网"></a>hexo和nexT中文网</h2><blockquote><p>hexo中文网 <a href="https://hexo.io/zh-cn/docs/helpers" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/helpers</a><br>nexT中文官网 <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;所谓博客，都是孤芳自赏 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;现在越来越多的人喜欢利用Github搭建静态网站，原因不外乎简单省钱。本人也利用hexo+github搭建了本博客，用于分享一些心得。在此过程中，折腾博客的各种配置以及功能占具了我一部分时间，在此详细记录下我是如何利用hexo+github搭建静态博客以及一些配置相关问题，以免过后遗忘，且当备份之用。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="分类与(web)" scheme="http://yoursite.com/categories/%E5%88%86%E7%B1%BB%E4%B8%8E-web/"/>
+    
+    
+  </entry>
+  
+</feed>
