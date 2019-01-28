@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
+    
+    <lastmod>2019-01-28T09:20:10.121Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhanghuaxiao.github.io/2019/01/28/CommonJs-AMD-CMD/</loc>
     
-    <lastmod>2019-01-28T09:12:11.960Z</lastmod>
+    <lastmod>2019-01-28T09:14:51.603Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
     
     <lastmod>2019-01-25T14:42:58.424Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
-    
-    <lastmod>2019-01-24T15:50:26.961Z</lastmod>
     
   </url>
   

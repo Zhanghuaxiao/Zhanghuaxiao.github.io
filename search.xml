@@ -7,6 +7,9 @@
       <categories>
         <category>web</category>
       </categories>
+      <tags>
+        <tag>CommonJS/AMD/CMD</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[用 JavaScript 和 Emoji 做地址栏动画]]></title>

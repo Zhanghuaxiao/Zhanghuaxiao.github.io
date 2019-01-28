@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
+    <lastmod>2019-01-28</lastmod>
+  </url>  <url>
     <loc>https://zhanghuaxiao.github.io/2019/01/28/CommonJs-AMD-CMD/</loc>
     <lastmod>2019-01-28</lastmod>
   </url>  <url>
@@ -9,8 +12,5 @@
   </url>  <url>
     <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
     <lastmod>2019-01-25</lastmod>
-  </url>  <url>
-    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
-    <lastmod>2019-01-24</lastmod>
   </url>
 </urlset>
