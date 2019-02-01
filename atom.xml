@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghuaxiao.github.io/"/>
-  <updated>2019-01-31T04:49:28.447Z</updated>
+  <updated>2019-02-01T03:24:46.005Z</updated>
   <id>https://zhanghuaxiao.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vuejs源码解析</title>
+    <link href="https://zhanghuaxiao.github.io/2019/01/31/Vuejs%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
+    <id>https://zhanghuaxiao.github.io/2019/01/31/Vuejs源码解析/</id>
+    <published>2019-01-31T08:40:13.000Z</published>
+    <updated>2019-02-01T03:24:46.005Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>除了使用vue工具，更想揭开神秘面纱,开始一场神秘之旅吧 </p></blockquote><a id="more"></a><p><a href="https://github.com/vuejs/vue/blob/dev/src/core/instance/index.js" target="_blank" rel="noopener">vue源码地址</a></p><h1 id="看后感觉内容不错的参考资料"><a href="#看后感觉内容不错的参考资料" class="headerlink" title="看后感觉内容不错的参考资料"></a>看后感觉内容不错的参考资料</h1><ul><li><a href="http://hcysun.me/vue-design/art/2vue-constructor.html" target="_blank" rel="noopener">Vue技术内幕</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;除了使用vue工具，更想揭开神秘面纱,开始一场神秘之旅吧 &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>vue中diff算法详解</title>
