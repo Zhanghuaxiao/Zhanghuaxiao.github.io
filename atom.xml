@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghuaxiao.github.io/"/>
-  <updated>2019-02-01T03:24:46.005Z</updated>
+  <updated>2019-02-03T15:41:07.069Z</updated>
   <id>https://zhanghuaxiao.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区块链理论和代码演示</title>
+    <link href="https://zhanghuaxiao.github.io/2019/02/03/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/"/>
+    <id>https://zhanghuaxiao.github.io/2019/02/03/区块链技术/</id>
+    <published>2019-02-03T13:28:21.000Z</published>
+    <updated>2019-02-03T15:41:07.069Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>一场没有诗和远方，全是苟且的演讲</p></blockquote><p>无意间看晓说，他说5G对以后的影响，其中有个数据分发使用了比特币技术，对此查阅资料及视频进行学习，以下为个人总结<br><a id="more"></a><br>参考资料如何</p><ul><li><p><a href="https://v.youku.com/v_show/id_XMzk5Mzk3MjI4OA==.html?spm=a2h0j.11185381.listitem_page1.5!6~A&amp;&amp;s=6e782defbfbd0d4e11ef" target="_blank" rel="noopener">晓说视频</a></p></li><li><p><a href="https://www.imooc.com/video/17059" target="_blank" rel="noopener">讲解区块链原理视频</a></p></li><li><a href="https://www.imooc.com/video/17549" target="_blank" rel="noopener">区块链代码实现视频</a></li></ul><h2 id="区块链基本原型"><a href="#区块链基本原型" class="headerlink" title="区块链基本原型"></a>区块链基本原型</h2><ul><li>区块链本质就是 <strong>分布式数据库</strong></li><li>区块链是 <strong>公开的数据库</strong>，不是私人的数据库</li><li>区块链是加密货币和智能合约的基础</li></ul><h2 id="解决去中心问题"><a href="#解决去中心问题" class="headerlink" title="解决去中心问题"></a>解决去中心问题</h2><p>问：如何快速验证哪个数据才是正确的？<br>答：每次交易都记录 序号/时间戳/hash值，形成一个区块链，和其他区块进行对比</p><h2 id="如何确定使用权。"><a href="#如何确定使用权。" class="headerlink" title="如何确定使用权。"></a>如何确定使用权。</h2><p>问：账户所有权问题<br>    <img src="/img/ownership.png"><br>    <img src="/img/ownership1.png"><br>答：谁用这个地址支付，谁就拥有这个地址的所有权,谁有这个私钥，谁就能用这个地址支付，丢失私钥就是丢失使用权不能补办</p><h2 id="使用go语言模拟区块链技术基本原理"><a href="#使用go语言模拟区块链技术基本原理" class="headerlink" title="使用go语言模拟区块链技术基本原理"></a>使用go语言模拟区块链技术基本原理</h2><p><img src="/img/blockchain-basic-core.png"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上内容为个人学习总结，后期不定更新</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;一场没有诗和远方，全是苟且的演讲&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;无意间看晓说，他说5G对以后的影响，其中有个数据分发使用了比特币技术，对此查阅资料及视频进行学习，以下为个人总结&lt;br&gt;
+    
+    </summary>
+    
+      <category term="区块链" scheme="https://zhanghuaxiao.github.io/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+    
+      <category term="区块链理论和代码演示" scheme="https://zhanghuaxiao.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%90%86%E8%AE%BA%E5%92%8C%E4%BB%A3%E7%A0%81%E6%BC%94%E7%A4%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Vuejs源码解析</title>
