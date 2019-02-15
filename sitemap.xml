@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
+    
+    <lastmod>2019-02-15T05:26:46.205Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
+    
+    <lastmod>2019-02-15T05:25:24.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhanghuaxiao.github.io/2019/02/14/%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD/</loc>
     
     <lastmod>2019-02-15T03:34:19.157Z</lastmod>
@@ -44,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
-    
-    <lastmod>2019-01-30T06:36:48.660Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zhanghuaxiao.github.io/2019/01/30/vue-source-code/</loc>
     
     <lastmod>2019-01-30T06:35:13.150Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://zhanghuaxiao.github.io/2019/01/29/gulp%E5%92%8Cwebpack%E5%8C%BA%E5%88%AB/</loc>
     
     <lastmod>2019-01-29T04:52:05.144Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhanghuaxiao.github.io/2019/01/24/posts/</loc>
-    
-    <lastmod>2019-01-28T09:20:10.121Z</lastmod>
     
   </url>
   
