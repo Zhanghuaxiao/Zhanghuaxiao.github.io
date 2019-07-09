@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghuaxiao.github.io/"/>
-  <updated>2019-07-09T07:39:07.952Z</updated>
+  <updated>2019-07-09T08:41:41.642Z</updated>
   <id>https://zhanghuaxiao.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo的基本操作</title>
+    <link href="https://zhanghuaxiao.github.io/2019/07/09/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    <id>https://zhanghuaxiao.github.io/2019/07/09/hexo的基本操作/</id>
+    <published>2019-07-09T08:36:44.000Z</published>
+    <updated>2019-07-09T08:41:41.642Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>记录一下hexo的基本操作 </p></blockquote><a id="more"></a><blockquote><p>hexo clean =&gt; hexo s =&gt; 创建 hexo new “title”</p></blockquote><blockquote><p>hexo clean（清除） =&gt; hexo g（生成） =&gt; glup（压缩打包） =&gt; hexo d（部署git）</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;记录一下hexo的基本操作 &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="hexo的基本操作" scheme="https://zhanghuaxiao.github.io/tags/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue双向绑定实现原理</title>
