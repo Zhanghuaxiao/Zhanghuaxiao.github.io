@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghuaxiao.github.io/"/>
-  <updated>2019-07-09T08:41:41.642Z</updated>
+  <updated>2019-08-15T02:09:22.150Z</updated>
   <id>https://zhanghuaxiao.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在mac appstor下载软件提示内存不足问题</title>
+    <link href="https://zhanghuaxiao.github.io/2019/08/15/%E5%9C%A8mac%20app%20store%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E6%8F%90%E7%A4%BA%E5%86%85%E5%AD%98%E4%B8%8D%E8%B6%B3%E9%97%AE%E9%A2%98/"/>
+    <id>https://zhanghuaxiao.github.io/2019/08/15/在mac app store下载软件提示内存不足问题/</id>
+    <published>2019-08-15T02:04:03.000Z</published>
+    <updated>2019-08-15T02:09:22.150Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>日积月累 </p></blockquote><a id="more"></a><p>time machine搞的鬼。你原来空间不足时，但time machine存储的是你的“过去”你只禁用掉time machine，再删除time machine时间点就可以了，另外可以运行电脑一两天，也有可能就好了。你在关于存储空间中显示的不是真实值，用df -h查看才是真实的。只要运行sudo tmutil listlocalsnapshots /查看有还存储了那些time machine，再用下面的命令删除掉就可以了。tmutil deletelocalsnapshots 2019-07-02-203562</p><p>作者：find goo<br>链接：<a href="https://www.zhihu.com/question/41535274/answer/735495003" target="_blank" rel="noopener">https://www.zhihu.com/question/41535274/answer/735495003</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;日积月累 &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="用机小技巧" scheme="https://zhanghuaxiao.github.io/categories/%E7%94%A8%E6%9C%BA%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo的基本操作</title>

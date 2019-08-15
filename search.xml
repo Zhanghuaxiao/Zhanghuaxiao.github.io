@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在mac appstor下载软件提示内存不足问题]]></title>
+    <url>%2F2019%2F08%2F15%2F%E5%9C%A8mac%20app%20store%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E6%8F%90%E7%A4%BA%E5%86%85%E5%AD%98%E4%B8%8D%E8%B6%B3%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[日积月累 time machine搞的鬼。你原来空间不足时，但time machine存储的是你的“过去”你只禁用掉time machine，再删除time machine时间点就可以了，另外可以运行电脑一两天，也有可能就好了。你在关于存储空间中显示的不是真实值，用df -h查看才是真实的。只要运行sudo tmutil listlocalsnapshots /查看有还存储了那些time machine，再用下面的命令删除掉就可以了。tmutil deletelocalsnapshots 2019-07-02-203562 作者：find goo链接：https://www.zhihu.com/question/41535274/answer/735495003来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。]]></content>
+      <categories>
+        <category>用机小技巧</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[hexo的基本操作]]></title>
     <url>%2F2019%2F07%2F09%2Fhexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[记录一下hexo的基本操作 hexo clean =&gt; hexo s =&gt; 创建 hexo new “title” hexo clean（清除） =&gt; hexo g（生成） =&gt; glup（压缩打包） =&gt; hexo d（部署git）]]></content>
