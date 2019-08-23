@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghuaxiao.github.io/"/>
-  <updated>2019-08-15T02:09:22.150Z</updated>
+  <updated>2019-08-23T03:27:30.015Z</updated>
   <id>https://zhanghuaxiao.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue中的$emit $on $once $off的使用</title>
+    <link href="https://zhanghuaxiao.github.io/2019/08/23/vue%E7%9A%84-emit-on-once-off%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://zhanghuaxiao.github.io/2019/08/23/vue的-emit-on-once-off的使用/</id>
+    <published>2019-08-23T03:12:11.000Z</published>
+    <updated>2019-08-23T03:27:30.015Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>最近的大事就是香港暴乱,做好自己就是对祖国的最好支持！ </p></blockquote><a id="more"></a><p>1.如果对以上方法还不了解的可以点击<a href="https://cn.vuejs.org/v2/api/#vm-on" target="_blank" rel="noopener">传送门</a>大致了解一下😯<br>2.都说实践出真知，复制以下代码，动动小手点击下就全懂啦！<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"app"</span>&gt;</span><br><span class="line">        &lt;p&gt;&#123;&#123;msg&#125;&#125;&#123;&#123;count&#125;&#125;&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">        &lt;children-component @aa="aa"&gt;&lt;/</span>children-component&gt; &lt;br/&gt;</span><br><span class="line">        &lt;button @click=<span class="string">"removeClick"</span>&gt;父组件按钮使用$off移除$on监听&lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">    &lt;script src=<span class="string">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        <span class="keyword">var</span> bus = <span class="keyword">new</span> Vue()</span><br><span class="line">        <span class="keyword">var</span> children = &#123;</span><br><span class="line">                data()&#123;</span><br><span class="line">                    <span class="keyword">return</span>&#123;</span><br><span class="line">                        data:<span class="string">""</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                methods: &#123;</span><br><span class="line">                    childrenClick()&#123;</span><br><span class="line">                        bus.$emit(<span class="string">'aa'</span>,<span class="string">'子组件通过emit发送过来的数据'</span>)</span><br><span class="line">                    &#125;,</span><br><span class="line">                    hanldClick()&#123;</span><br><span class="line">                        bus.$emit(<span class="string">'bb'</span>,<span class="string">'子组件用来探索$once'</span>)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">            template:<span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">                &lt;button @click="childrenClick"&gt;子组件使用$emit发送数据，父组件使用$on监听&lt;/button&gt;&lt;br/&gt;&lt;br/&gt; </span></span><br><span class="line"><span class="string">                &lt;button @click="hanldClick"&gt;子组件使用$emit发送数据，父组件使用$once监听只能触发一次&lt;/button&gt;</span></span><br><span class="line"><span class="string">            &lt;/div&gt;`</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">            el:<span class="string">"#app"</span>,</span><br><span class="line">            data:&#123;</span><br><span class="line">                msg:<span class="string">''</span>,</span><br><span class="line">                count:<span class="number">0</span></span><br><span class="line">            &#125;,</span><br><span class="line">            components:&#123;</span><br><span class="line">                <span class="string">'children-component'</span>:children</span><br><span class="line">            &#125;,</span><br><span class="line">            methods:&#123;</span><br><span class="line">                aa(s)&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(s)  </span><br><span class="line">                &#125;,</span><br><span class="line">                removeClick()&#123;</span><br><span class="line">                    bus.$off(<span class="string">'aa'</span>)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            mounted()&#123;</span><br><span class="line">                bus.$on(<span class="string">'aa'</span>,(val)=&gt;&#123;</span><br><span class="line">                    <span class="keyword">this</span>.msg = val</span><br><span class="line">                    <span class="keyword">this</span>.count++</span><br><span class="line">                &#125;)</span><br><span class="line">                bus.$once(<span class="string">'bb'</span>,(val)=&gt;&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(val)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;最近的大事就是香港暴乱,做好自己就是对祖国的最好支持！ &lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="web" scheme="https://zhanghuaxiao.github.io/categories/web/"/>
+    
+    
+      <category term="vue中$emit/$on/$once/$off的使用" scheme="https://zhanghuaxiao.github.io/tags/vue%E4%B8%AD-emit-on-once-off%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>在mac appstor下载软件提示内存不足问题</title>
@@ -42,9 +65,9 @@
     <link href="https://zhanghuaxiao.github.io/2019/07/09/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
     <id>https://zhanghuaxiao.github.io/2019/07/09/hexo的基本操作/</id>
     <published>2019-07-09T08:36:44.000Z</published>
-    <updated>2019-07-09T08:41:41.642Z</updated>
+    <updated>2019-08-23T03:31:43.293Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>记录一下hexo的基本操作 </p></blockquote><a id="more"></a><blockquote><p>hexo clean =&gt; hexo s =&gt; 创建 hexo new “title”</p></blockquote><blockquote><p>hexo clean（清除） =&gt; hexo g（生成） =&gt; glup（压缩打包） =&gt; hexo d（部署git）</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>记录一下hexo的基本操作 </p></blockquote><a id="more"></a><blockquote><p>hexo clean =&gt; hexo s =&gt; 创建 hexo new “title”</p></blockquote><blockquote><p>hexo clean（清除） =&gt; hexo g（生成） =&gt; gulp（压缩打包） =&gt; hexo d（部署git）</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -52,6 +75,8 @@
 &lt;/blockquote&gt;
     
     </summary>
+    
+      <category term="hexo的基本操作" scheme="https://zhanghuaxiao.github.io/categories/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
     
     
       <category term="hexo的基本操作" scheme="https://zhanghuaxiao.github.io/tags/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>

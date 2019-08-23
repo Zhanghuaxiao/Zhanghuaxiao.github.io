@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vue中的$emit $on $once $off的使用]]></title>
+    <url>%2F2019%2F08%2F23%2Fvue%E7%9A%84-emit-on-once-off%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[最近的大事就是香港暴乱,做好自己就是对祖国的最好支持！ 1.如果对以上方法还不了解的可以点击传送门大致了解一下😯2.都说实践出真知，复制以下代码，动动小手点击下就全懂啦！123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657&lt;body&gt; &lt;div id="app"&gt; &lt;p&gt;&#123;&#123;msg&#125;&#125;&#123;&#123;count&#125;&#125;&lt;/p&gt; &lt;children-component @aa="aa"&gt;&lt;/children-component&gt; &lt;br/&gt; &lt;button @click="removeClick"&gt;父组件按钮使用$off移除$on监听&lt;/button&gt; &lt;/div&gt; &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt; &lt;script&gt; var bus = new Vue() var children = &#123; data()&#123; return&#123; data:"" &#125; &#125;, methods: &#123; childrenClick()&#123; bus.$emit('aa','子组件通过emit发送过来的数据') &#125;, hanldClick()&#123; bus.$emit('bb','子组件用来探索$once') &#125; &#125;, template:`&lt;div&gt; &lt;button @click="childrenClick"&gt;子组件使用$emit发送数据，父组件使用$on监听&lt;/button&gt;&lt;br/&gt;&lt;br/&gt; &lt;button @click="hanldClick"&gt;子组件使用$emit发送数据，父组件使用$once监听只能触发一次&lt;/button&gt; &lt;/div&gt;` &#125; var vm = new Vue(&#123; el:"#app", data:&#123; msg:'', count:0 &#125;, components:&#123; 'children-component':children &#125;, methods:&#123; aa(s)&#123; console.log(s) &#125;, removeClick()&#123; bus.$off('aa') &#125; &#125;, mounted()&#123; bus.$on('aa',(val)=&gt;&#123; this.msg = val this.count++ &#125;) bus.$once('bb',(val)=&gt;&#123; console.log(val) &#125;) &#125; &#125;) &lt;/script&gt;&lt;/body&gt;]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>vue中$emit/$on/$once/$off的使用</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[在mac appstor下载软件提示内存不足问题]]></title>
     <url>%2F2019%2F08%2F15%2F%E5%9C%A8mac%20app%20store%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E6%8F%90%E7%A4%BA%E5%86%85%E5%AD%98%E4%B8%8D%E8%B6%B3%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[日积月累 time machine搞的鬼。你原来空间不足时，但time machine存储的是你的“过去”你只禁用掉time machine，再删除time machine时间点就可以了，另外可以运行电脑一两天，也有可能就好了。你在关于存储空间中显示的不是真实值，用df -h查看才是真实的。只要运行sudo tmutil listlocalsnapshots /查看有还存储了那些time machine，再用下面的命令删除掉就可以了。tmutil deletelocalsnapshots 2019-07-02-203562 作者：find goo链接：https://www.zhihu.com/question/41535274/answer/735495003来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。]]></content>
@@ -11,7 +22,10 @@
   <entry>
     <title><![CDATA[hexo的基本操作]]></title>
     <url>%2F2019%2F07%2F09%2Fhexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[记录一下hexo的基本操作 hexo clean =&gt; hexo s =&gt; 创建 hexo new “title” hexo clean（清除） =&gt; hexo g（生成） =&gt; glup（压缩打包） =&gt; hexo d（部署git）]]></content>
+    <content type="text"><![CDATA[记录一下hexo的基本操作 hexo clean =&gt; hexo s =&gt; 创建 hexo new “title” hexo clean（清除） =&gt; hexo g（生成） =&gt; gulp（压缩打包） =&gt; hexo d（部署git）]]></content>
+      <categories>
+        <category>hexo的基本操作</category>
+      </categories>
       <tags>
         <tag>hexo的基本操作</tag>
       </tags>
