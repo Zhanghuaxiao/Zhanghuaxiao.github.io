@@ -44,9 +44,9 @@
     <link href="https://zhanghuaxiao.github.io/2019/08/15/%E5%9C%A8mac%20app%20store%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6%E6%8F%90%E7%A4%BA%E5%86%85%E5%AD%98%E4%B8%8D%E8%B6%B3%E9%97%AE%E9%A2%98/"/>
     <id>https://zhanghuaxiao.github.io/2019/08/15/在mac app store下载软件提示内存不足问题/</id>
     <published>2019-08-15T02:04:03.000Z</published>
-    <updated>2019-08-15T02:09:22.150Z</updated>
+    <updated>2019-08-23T06:13:51.470Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>日积月累 </p></blockquote><a id="more"></a><p>time machine搞的鬼。你原来空间不足时，但time machine存储的是你的“过去”你只禁用掉time machine，再删除time machine时间点就可以了，另外可以运行电脑一两天，也有可能就好了。你在关于存储空间中显示的不是真实值，用df -h查看才是真实的。只要运行sudo tmutil listlocalsnapshots /查看有还存储了那些time machine，再用下面的命令删除掉就可以了。tmutil deletelocalsnapshots 2019-07-02-203562</p><p>作者：find goo<br>链接：<a href="https://www.zhihu.com/question/41535274/answer/735495003" target="_blank" rel="noopener">https://www.zhihu.com/question/41535274/answer/735495003</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>日积月累 </p></blockquote><a id="more"></a><p>time machine搞的鬼。你原来空间不足时，但time machine存储的是你的“过去”你只禁用掉time machine，再删除time machine时间点就可以了，另外可以运行电脑一两天，也有可能就好了。你在关于存储空间中显示的不是真实值，用df -h查看才是真实的。只要运行sudo tmutil listlocalsnapshots /查看有还存储了那些time machine，再用下面的命令删除掉就可以了。</p>]]></content>
     
     <summary type="html">
     
@@ -65,7 +65,7 @@
     <link href="https://zhanghuaxiao.github.io/2019/07/09/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
     <id>https://zhanghuaxiao.github.io/2019/07/09/hexo的基本操作/</id>
     <published>2019-07-09T08:36:44.000Z</published>
-    <updated>2019-08-23T03:31:43.293Z</updated>
+    <updated>2019-08-23T06:18:49.990Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>记录一下hexo的基本操作 </p></blockquote><a id="more"></a><blockquote><p>hexo clean =&gt; hexo s =&gt; 创建 hexo new “title”</p></blockquote><blockquote><p>hexo clean（清除） =&gt; hexo g（生成） =&gt; gulp（压缩打包） =&gt; hexo d（部署git）</p></blockquote>]]></content>
     
@@ -76,7 +76,7 @@
     
     </summary>
     
-      <category term="hexo的基本操作" scheme="https://zhanghuaxiao.github.io/categories/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
+      <category term="hexo的使用" scheme="https://zhanghuaxiao.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="hexo的基本操作" scheme="https://zhanghuaxiao.github.io/tags/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/"/>
@@ -446,7 +446,7 @@
     <link href="https://zhanghuaxiao.github.io/2019/01/24/posts/"/>
     <id>https://zhanghuaxiao.github.io/2019/01/24/posts/</id>
     <published>2019-01-24T06:16:00.000Z</published>
-    <updated>2019-02-15T06:15:19.603Z</updated>
+    <updated>2019-08-23T06:18:10.917Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>所谓博客，都是孤芳自赏 </p></blockquote><p>现在越来越多的人喜欢利用Github搭建静态网站，原因不外乎简单省钱。本人也利用hexo+github搭建了本博客，用于分享一些心得。在此过程中，折腾博客的各种配置以及功能占具了我一部分时间，在此详细记录下我是如何利用hexo+github搭建静态博客以及一些配置相关问题，以免过后遗忘，且当备份之用。<br><a id="more"></a></p><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p> 下载node.js并安装（官网下载安装），默认会安装npm。<br> 下载安装git（官网下载安装）<br> 下载安装hexo。方法：打开cmd 运行npm install -g hexo</p><h1 id="本地搭建hexo静态博客"><a href="#本地搭建hexo静态博客" class="headerlink" title="本地搭建hexo静态博客"></a>本地搭建hexo静态博客</h1><p> 新建一个文件夹，如MyBlog<br> 进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙）<br> 生成完模板，运行npm install（目前貌似不用运行这一步）<br> 最后运行：hexo server （运行程序，访问本地+localhost:4000可以看到博客已经搭建成功）</p><h1 id="站内搜索配置"><a href="#站内搜索配置" class="headerlink" title="站内搜索配置"></a>站内搜索配置</h1><p>首先安装hexo-generator-searchdb插件</p><blockquote><p>npm install hexo-generator-searchdb –save</p></blockquote><p>编辑博客根目录下的博客本地目录/_config.yml站点配置文件，新增以下内容到任意位置，search顶格放否则可能没效果：</p><pre><code>search:  path: search.xml  field: post  format: html  limit: 10000</code></pre><p>编辑博客本地目录/themes/next/_config.yml 主题配置文件，启用本地搜索功能,将local_search:下面的enable:的值，改成true<br>可以输入以下命令，先清理缓存，然后本地部署调试</p><blockquote><p>hexo clean<br>hexo s</p></blockquote><h2 id="搜索无效、一直loading的问题"><a href="#搜索无效、一直loading的问题" class="headerlink" title="搜索无效、一直loading的问题"></a>搜索无效、一直loading的问题</h2><p>按F12可以查看请求命令的状态，状态码200表示请求成功。但是搜索动画还是一直在转。<br>1.文章中包含特殊字符，文件编码时出错<br><img src="/img/Garbled.png"></p><h1 id="部署github"><a href="#部署github" class="headerlink" title="部署github"></a>部署github</h1><p>MyBlog文件夹安装 npm install –save hexo-deployer-git<br> 找到 <em>_config.yml</em>文件修改一下文件<br>deploy:<br>type: git<br>repo: <a href="https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.git" target="_blank" rel="noopener">https://github.com/Zhanghuaxiao/Zhanghuaxiao.github.io.git</a><br>branch: master<br><img style="width:600px;height:200px" src="/img/urlimg.png" class="full-image"> 最后运行hexo clean(清除) hexo g(生成) hexo d(部署)<br>点击查看效果: <a href="https://zhanghuaxiao.github.io/">https://zhanghuaxiao.github.io/</a><br><img style="width:600px;height:200px" src="/img/github-pages.png" class="full-image"></p><h1 id="使用nexT主题"><a href="#使用nexT主题" class="headerlink" title="使用nexT主题"></a>使用nexT主题</h1><p> 安装 <a href="https://github.com/iissnan/hexo-theme-next themes/next" target="_blank" rel="noopener">git clone</a><br> 修改_config.yml文件中 theme:next<br> 运行</p><blockquote><p>hexo clean<br> hexo s</p></blockquote><h1 id="hexo和nexT中文网"><a href="#hexo和nexT中文网" class="headerlink" title="hexo和nexT中文网"></a>hexo和nexT中文网</h1><p> <a href="https://hexo.io/zh-cn/docs/helpers" target="_blank" rel="noopener">hexo中文网</a><br> <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">nexT中文官网</a></p><h1 id="nexT主题参考文章"><a href="#nexT主题参考文章" class="headerlink" title="nexT主题参考文章"></a>nexT主题参考文章</h1><p> <a href="https://segmentfault.com/a/1190000009544924#articleHeader2" target="_blank" rel="noopener">对nexT主题设置</a><br> <a href="https://www.jianshu.com/p/86557c34b671" target="_blank" rel="noopener">seo优化</a><br> <a href="https://www.jianshu.com/p/02afabcae502" target="_blank" rel="noopener">Hexo博客Next主题站内搜索模块相关，解决搜索无效、一直loading的问题</a></p>]]></content>
     
@@ -458,7 +458,7 @@
     
     </summary>
     
-      <category term="web" scheme="https://zhanghuaxiao.github.io/categories/web/"/>
+      <category term="hexo的使用" scheme="https://zhanghuaxiao.github.io/categories/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="hexo" scheme="https://zhanghuaxiao.github.io/tags/hexo/"/>
