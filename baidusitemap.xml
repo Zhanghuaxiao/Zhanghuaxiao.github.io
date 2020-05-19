@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhanghuaxiao.github.io/2020/05/19/%E5%A6%82%E4%BD%95%E6%B8%85%E9%99%A4%E5%B7%B2%E8%AE%BE%E7%BD%AE%E7%9A%84npm%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F/</loc>
+    <lastmod>2020-05-19</lastmod>
+  </url>  <url>
+    <loc>https://zhanghuaxiao.github.io/2019/11/25/nodeJs%E5%9B%9E%E9%A1%BE%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2019-11-26</lastmod>
+  </url>  <url>
+    <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
+    <lastmod>2019-11-22</lastmod>
+  </url>  <url>
     <loc>https://zhanghuaxiao.github.io/2019/07/09/hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2019-08-23</lastmod>
   </url>  <url>
@@ -29,9 +38,6 @@
     <lastmod>2019-02-18</lastmod>
   </url>  <url>
     <loc>https://zhanghuaxiao.github.io/2019/02/14/js%E8%8E%B7%E5%8F%96%E4%BA%8B%E4%BB%B6%E5%9D%90%E6%A0%87%E4%BD%8D%E7%BD%AE/</loc>
-    <lastmod>2019-02-15</lastmod>
-  </url>  <url>
-    <loc>https://zhanghuaxiao.github.io/2019/01/25/webpack4-29-0/</loc>
     <lastmod>2019-02-15</lastmod>
   </url>  <url>
     <loc>https://zhanghuaxiao.github.io/2019/01/30/vue-diff%E7%AE%97%E6%B3%95/</loc>
